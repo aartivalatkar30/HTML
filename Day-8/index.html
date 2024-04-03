@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+ #hover {
+        border: 1px solid black;
+        height: 100px;
+        width: 100px;
+      }
+
+      #hover:hover {
+        border: 1px solid red;
+        color:rgb(219, 206, 14);
+      }
+      /* when using pattern */
+      #text:valid {
+        background-color: green;
+      }
+
+      #text:invalid {
+        background-color: red;
+      }
+
+    </style>
+  </head>
+  <body style="background-color:lightslategrey">
+ <h3>form with submit &reset</h3>
+    <form>
+      <fieldset style="width: 50%;">
+        <legend>SIGN IN</legend>
+        <label>Email :</label><br />
+        <input /><br />
+        <label>Password :</label><br />
+        <input /><br /><br>
+        <input type="submit" /><br /><br>
+        <input type="reset">
+
+      </fieldset>
+      <br>
+      <fieldset style="width: 50%;" >
+        Range : <input type="range">
+
+       Size : <input type="text" size="" />
+         text:<input type="text" size="20" />
+         <br><br>
+   Maxlength (only 5 digits): <input maxlength="5" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Form</legend>
+        <form onsubmit="">
+            Id :<input id="text" type="text" pattern="\w{2,13}" required />
+            <br><br>
+            Password:<input id="text" type="password" pattern="\w{4,4}" required />
+            <br><br>
+            <input disabled type="submit" />
+            <br>
+            <br>
+
+            
+          </form>
+
+          <div id="hover"> Please hover & see the magic!!!</div>
+          <br><br>
+          <canvas
+          id="myCanvas"
+          width="50"
+          height="50"
+          style="border: 1px solid #9525c2"></canvas>
+        <br><br>
+        <svg width="100" height="100">
+            <circle
+              cx="50"
+              cy="50"
+              r="40"
+              stroke="green"
+              strokewidth="4"
+              fill="black"
+            />
+          </svg>
+      </fieldset>
+
+    </form>
+
+
+
+    
+  </body>
+</html>
